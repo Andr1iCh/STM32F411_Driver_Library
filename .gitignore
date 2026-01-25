@@ -1,0 +1,16 @@
+# STM32CubeIDE / Eclipse build output
+Debug/
+Release/
+build/
+*.bin
+*.elf
+*.hex
+*.map
+
+# Local IDE settings (Optional: keep .project & .cproject, ignore .settings)
+.settings/
+.metadata/
+
+# OS junk
+.DS_Store
+Thumbs.db
