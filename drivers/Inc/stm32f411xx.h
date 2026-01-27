@@ -88,9 +88,6 @@
 #define SPI3_BASEADDR						(APB1PERIPH_BASEADDR + 0x3C00)
 
 #define USART2_BASEADDR						(APB1PERIPH_BASEADDR + 0x4400)
-#define USART3_BASEADDR						(APB1PERIPH_BASEADDR + 0x4800)
-#define UART4_BASEADDR						(APB1PERIPH_BASEADDR + 0x4C00)
-#define UART5_BASEADDR						(APB1PERIPH_BASEADDR + 0x5000)
 
 /*
  * Base addresses of peripherals which are hanging on APB2 bus
@@ -216,6 +213,20 @@ typedef struct
 }SPI_RegDef_t;
 
 /*
+ * peripheral register definition structure for USART
+ */
+typedef struct
+{
+	__vo uint32_t USART_SR;    /*!<												Address offset: 0x00 */
+	__vo uint32_t USART_DR;    /*!< TODO,                						Address offset: 0x04 */
+	__vo uint32_t USART_BRR;   /*!< TODO,  									    Address offset: 0x08 */
+	__vo uint32_t USART_CR1;   /*!< TODO, 											Address offset: 0x0C */
+	__vo uint32_t USART_CR2;  /*!< TODO,  										Address offset: 0x10 */
+	__vo uint32_t USART_CR3;     /*!< TODO,                   					Address offset: 0x14 */
+	__vo uint32_t USART_GTPR;     /*!< TODO,                   			  		Address offset: 0x18 */
+}USART_RegDef_t;
+
+/*
  * peripheral definitions (Peripheral base addresses typecasted to xxx_RegDef_t)
  */
 #define GPIOA        ((GPIO_RegDef_t*)GPIOA_BASEADDR)
@@ -234,6 +245,10 @@ typedef struct
 #define SPI3			((SPI_RegDef_t*)SPI3_BASEADDR)
 #define SPI4			((SPI_RegDef_t*)SPI4_BASEADDR)
 #define SPI5			((SPI_RegDef_t*)SPI5_BASEADDR)
+
+#define USART1			((USART_RegDef_t*)USART1_BASEADDR)
+#define USART2			((USART_RegDef_t*)USART2_BASEADDR)
+#define USART6			((USART_RegDef_t*)USART6_BASEADDR)
 
 /*
  * Clock Enable Macros for GPIOx peripherals
@@ -264,9 +279,9 @@ typedef struct
 /*
  * Clock Enable Macros for USARTx peripherals
  */
-#define USART1_PCCK_EN()  (RCC->APB2ENR |= (1 << 4))
-#define USART2_PCCK_EN()  (RCC->APB1ENR |= (1 << 17))
-#define USART6_PCCK_EN()  (RCC->APB2ENR |= (1 << 5))
+#define USART1_PCLK_EN()  (RCC->APB2ENR |= (1 << 4))
+#define USART2_PCLK_EN()  (RCC->APB1ENR |= (1 << 17))
+#define USART6_PCLK_EN()  (RCC->APB2ENR |= (1 << 5))
 
 /*
  * Clock Enable Macros for SYSCFG peripheral
@@ -298,7 +313,7 @@ typedef struct
 #define SPI2_PCLK_DI()  (RCC->APB1ENR &= ~(1 << 14))
 #define SPI3_PCLK_DI()  (RCC->APB1ENR &= ~(1 << 15))
 #define SPI4_PCLK_DI()  (RCC->APB2ENR &= ~(1 << 13))
-#define SPI5_PCLK_DI()  (RCC->APB2ENR &= ~(1 << 13))
+#define SPI5_PCLK_DI()  (RCC->APB2ENR &= ~(1 << 20))
 
 /*
  * Clock Disable Macros for USARTx peripherals
@@ -499,9 +514,75 @@ typedef struct
 #define SPI_SR_BSY					 	7
 #define SPI_SR_FRE					 	8
 
+/******************************************************************************************
+ *Bit position definitions of USART peripheral
+ ******************************************************************************************/
+/*
+ * Bit position definitions USART_CR1
+ */
+#define USART_CR1_SBK                      0    // Send Break
+#define USART_CR1_RWU                      1    // Receiver Wakeup
+#define USART_CR1_RE                       2    // Receiver Enable
+#define USART_CR1_TE                       3    // Transmitter Enable
+#define USART_CR1_IDLEIE                   4    // IDLE Interrupt Enable
+#define USART_CR1_RXNEIE                   5    // RXNE Interrupt Enable
+#define USART_CR1_TCIE                     6    // Transmission Complete Interrupt Enable
+#define USART_CR1_TXEIE                    7    // TXE Interrupt Enable
+#define USART_CR1_PEIE                     8    // PE Interrupt Enable
+#define USART_CR1_PS                       9    // Parity Selection
+#define USART_CR1_PCE                      10   // Parity Control Enable
+#define USART_CR1_WAKE                     11   // Wakeup method
+#define USART_CR1_M                        12   // Word length (0: 8 bits, 1: 9 bits)
+#define USART_CR1_UE                       13   // USART Enable
+#define USART_CR1_OVER8                    15   // Oversampling mode (0: 16x, 1: 8x)
+
+/*
+ * Bit position definitions USART_CR2
+ */
+#define USART_CR2_ADD                      0    // Address of the USART node
+#define USART_CR2_LBDL                     5    // LIN break detection length
+#define USART_CR2_LBDIE                    6    // LIN break detection interrupt enable
+#define USART_CR2_LBCL                     8    // Last bit clock pulse
+#define USART_CR2_CPHA                     9    // Clock phase
+#define USART_CR2_CPOL                     10   // Clock polarity
+#define USART_CR2_CLKEN                    11   // Clock enable
+#define USART_CR2_STOP                     12   // STOP bits (bits 12 & 13)
+#define USART_CR2_LINEN                    14   // LIN mode enable
+
+/*
+ * Bit position definitions USART_CR3
+ */
+#define USART_CR3_EIE                      0    // Error interrupt enable
+#define USART_CR3_IREN                     1    // IrDA mode enable
+#define USART_CR3_IRLP                     2    // IrDA low-power
+#define USART_CR3_HDSEL                    3    // Half-duplex selection
+#define USART_CR3_NACK                     4    // Smartcard NACK enable
+#define USART_CR3_SCEN                     5    // Smartcard mode enable
+#define USART_CR3_DMAR                     6    // DMA enable receiver
+#define USART_CR3_DMAT                     7    // DMA enable transmitter
+#define USART_CR3_RTSE                     8    // Request to send enable
+#define USART_CR3_CTSE                     9    // Clear to send enable
+#define USART_CR3_CTSIE                    10   // CTS interrupt enable
+#define USART_CR3_ONEBIT                   11   // One sample bit method enable
+
+/*
+ * Bit position definitions USART_SR
+ */
+#define USART_SR_PE                        0    // Parity Error
+#define USART_SR_FE                        1    // Framing Error
+#define USART_SR_NF                        2    // Noise Detected Flag
+#define USART_SR_ORE                       3    // Overrun Error
+#define USART_SR_IDLE                      4    // IDLE line detected
+#define USART_SR_RXNE                      5    // Read Data Register Not Empty
+#define USART_SR_TC                        6    // Transmission Complete
+#define USART_SR_TXE                       7    // Transmit Data Register Empty
+#define USART_SR_LBD                       8    // LIN Break Detection Flag
+#define USART_SR_CTS                       9    // CTS Flag
+
 
 #include "stm32f411xx_gpio_driver.h"
 #include "stm32f411xx_spi_driver.h"
+#include "stm32f411xx_usart_driver.h"
 
 #endif /* INC_STM32F411XX_H_ */
 
