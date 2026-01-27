@@ -508,6 +508,15 @@ void SPI_IRQHandling(SPI_Handle_t *pSPIHandle)
 {
 	uint8_t temp1, temp2;
 
+	//	check for RXE
+	temp1 = pSPIHandle->pSPIx->SPI_SR & (1<<SPI_SR_RXNE);
+	temp2 = pSPIHandle->pSPIx->SPI_CR2 & (1<<SPI_CR2_RXNEIE);
+
+	if(temp1 && temp2)
+	{
+		//handle RXE
+		SPI_RXNE_InterruptHandle(pSPIHandle);
+	}
 	//	check for TXE
 	temp1 = pSPIHandle->pSPIx->SPI_SR & (1<<SPI_SR_TXE);
 	temp2 = pSPIHandle->pSPIx->SPI_CR2 & (1<<SPI_CR2_TXEIE);
@@ -518,15 +527,6 @@ void SPI_IRQHandling(SPI_Handle_t *pSPIHandle)
 		SPI_TXE_InterruptHandle(pSPIHandle);
 	}
 
-	//	check for RXE
-	temp1 = pSPIHandle->pSPIx->SPI_SR & (1<<SPI_SR_RXNE);
-	temp2 = pSPIHandle->pSPIx->SPI_CR2 & (1<<SPI_CR2_RXNEIE);
-
-	if(temp1 && temp2)
-	{
-		//handle RXE
-		SPI_RXNE_InterruptHandle(pSPIHandle);
-	}
 
 	//check for OVR flag
 	temp1 = pSPIHandle->pSPIx->SPI_SR & (1<<SPI_SR_OVR);
