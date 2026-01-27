@@ -104,8 +104,43 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle)
 
 	 GPIO_PeriClockControl(pGPIOHandle->pGPIOx, ENABLE);
 
-	//1 . configure the mode of gpio pin
+	//1. configure the alt functionality
+	if(pGPIOHandle->GPIO_PinConfig.GPIO_PinMode == GPIO_MODE_ALTFN)
+	{
+		//AFLR
+		if(pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber <= 7)
+		{
+			pGPIOHandle->pGPIOx->AFRL &= ~(0xF << ( 4 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber ) ); //clearing
+			pGPIOHandle->pGPIOx->AFRL |= (pGPIOHandle->GPIO_PinConfig.GPIO_PinAltFunMode << ( 4 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber ) );
 
+		}
+		else //AFHR
+		{
+			uint8_t pin_shift = pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber - 8;
+			pGPIOHandle->pGPIOx->AFRH &= ~(0xF << ( 4 * pin_shift ) ); //clearing
+			pGPIOHandle->pGPIOx->AFRH |= (pGPIOHandle->GPIO_PinConfig.GPIO_PinAltFunMode << ( 4 * pin_shift ) );
+
+		}
+
+	}
+
+	//2. configure the speed
+	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinSpeed << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber) );
+	pGPIOHandle->pGPIOx->OSPEEDR &= ~( 0x3 << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber)); //clearing
+	pGPIOHandle->pGPIOx->OSPEEDR |= temp;
+
+	//3. configure the pupd settings
+	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinPuPdControl << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber) );
+	pGPIOHandle->pGPIOx->PUPDR &= ~( 0x3 << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber)); //clearing
+	pGPIOHandle->pGPIOx->PUPDR |= temp;
+
+
+	//4. configure the optype
+	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinOPType << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber );
+	pGPIOHandle->pGPIOx->OTYPER &= ~( 0x1 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber); //clearing
+	pGPIOHandle->pGPIOx->OTYPER |= temp;
+
+	//5 . configure the mode of gpio pin
 	if(pGPIOHandle->GPIO_PinConfig.GPIO_PinMode <= GPIO_MODE_ANALOG)
 	{
 		//the non interrupt mode
@@ -147,42 +182,6 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle)
 
 		//3 . enable the exti interrupt delivery using IMR
 		EXTI->IMR |= 1 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber;
-	}
-
-	//2. configure the speed
-	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinSpeed << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber) );
-	pGPIOHandle->pGPIOx->OSPEEDR &= ~( 0x3 << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber)); //clearing
-	pGPIOHandle->pGPIOx->OSPEEDR |= temp;
-
-	//3. configure the pupd settings
-	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinPuPdControl << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber) );
-	pGPIOHandle->pGPIOx->PUPDR &= ~( 0x3 << ( 2 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber)); //clearing
-	pGPIOHandle->pGPIOx->PUPDR |= temp;
-
-
-	//4. configure the optype
-	temp = (pGPIOHandle->GPIO_PinConfig.GPIO_PinOPType << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber );
-	pGPIOHandle->pGPIOx->OTYPER &= ~( 0x1 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber); //clearing
-	pGPIOHandle->pGPIOx->OTYPER |= temp;
-
-	//5. configure the alt functionality
-	if(pGPIOHandle->GPIO_PinConfig.GPIO_PinMode == GPIO_MODE_ALTFN)
-	{
-		//AFLR
-		if(pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber <= 7)
-		{
-			pGPIOHandle->pGPIOx->AFRL &= ~(0xF << ( 4 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber ) ); //clearing
-			pGPIOHandle->pGPIOx->AFRL |= (pGPIOHandle->GPIO_PinConfig.GPIO_PinAltFunMode << ( 4 * pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber ) );
-
-		}
-		else //AFHR
-		{
-			uint8_t pin_shift = pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber - 8;
-			pGPIOHandle->pGPIOx->AFRH &= ~(0xF << ( 4 * pin_shift ) ); //clearing
-			pGPIOHandle->pGPIOx->AFRH |= (pGPIOHandle->GPIO_PinConfig.GPIO_PinAltFunMode << ( 4 * pin_shift ) );
-
-		}
-
 	}
 
 }
