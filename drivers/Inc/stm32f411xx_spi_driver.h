@@ -15,13 +15,13 @@
  */
 typedef struct
 {
-	uint8_t SPI_DeviceMode;
-	uint8_t SPI_BusConfig;
-	uint8_t SPI_SclkSpeed;
-	uint8_t SPI_DFF;
-	uint8_t SPI_CPHA;
-	uint8_t SPI_CPOL;
-	uint8_t SPI_SSM;
+	uint8_t SPI_DeviceMode;		/*!< Possible values from @SPI_DeviceMode >*/
+	uint8_t SPI_BusConfig;		/*!< Possible values from @SPI_BusConfig >*/
+	uint8_t SPI_SclkSpeed;		/*!< Possible values from @SPI_SclkSpeed >*/
+	uint8_t SPI_DFF;			/*!< Possible values from @SPI_DFF >*/
+	uint8_t SPI_CPHA;			/*!< Possible values from @CPHA >*/
+	uint8_t SPI_CPOL;			/*!< Possible values from @CPOL >*/
+	uint8_t SPI_SSM;			/*!< Possible values from @SPI_SSM >*/
 }SPI_Config_t;
 
 /*
@@ -30,13 +30,13 @@ typedef struct
 typedef struct
 {
 	SPI_RegDef_t *pSPIx;        	/*!< This holds the base address of the SPIx peripheral >*/
-	SPI_Config_t SPIConfig;			/*!< This holds SPI pin configuration settings >*/
-	uint8_t      *pTxBuffer;		/* Store application Tx buffer address                     */
-	uint8_t      *pRxBuffer;    	/* Store application Rx buffer address                     */
-	uint32_t     TxLen;         	/* Store Tx length                                         */
-	uint32_t     RxLen;         	/* Store Rx length                                         */
-	uint32_t     TxState;       	/* Store Tx state                                          */
-	uint32_t     RxState;       	/* Store Rx state                                          */
+	SPI_Config_t SPIConfig;			/*!< This holds SPI configuration settings >*/
+	uint8_t      *pTxBuffer;		/*!< To store the app. Tx buffer address >*/
+	uint8_t      *pRxBuffer;    	/*!< To store the app. Rx buffer address >*/
+	uint32_t     TxLen;         	/*!< To store Tx len >*/
+	uint32_t     RxLen;         	/*!< To store Rx len >*/
+	uint32_t     TxState;       	/*!< To store Tx state >*/
+	uint32_t     RxState;       	/*!< To store Rx state >*/
 }SPI_Handle_t;
 
 /*
@@ -53,7 +53,6 @@ typedef struct
 #define SPI_EVENT_RX_CMPLT   2
 #define SPI_EVENT_OVR_ERR    3
 #define SPI_EVENT_CRC_ERR    4
-
 
 
 /*

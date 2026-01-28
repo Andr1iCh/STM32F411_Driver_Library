@@ -12,7 +12,7 @@
 
 typedef struct
 {
-	USART_RegDef_t *pUSARTx; 			/* This holds the base address of the SPIx peripheral */
+	USART_RegDef_t *pUSARTx; 			/* This holds the base address of the USARTx peripheral */
 
 }USART_Handle_t;
 

@@ -7,10 +7,13 @@ build/
 *.hex
 *.map
 
-# Local IDE settings (Optional: keep .project & .cproject, ignore .settings)
+# Local IDE settings
 .settings/
 .metadata/
 
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Твоя папка з тестами (відносний шлях)
+Projects/RFID-RC522_SPI/Tests/
