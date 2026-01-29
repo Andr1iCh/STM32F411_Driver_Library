@@ -1,9 +1,13 @@
-/*
- * stm32f411xx_spi_driver.c
- *
- *  Created on: Dec 12, 2025
- *      Author: Andy
+/**
+ * @file stm32f411xx_spi_driver.c
+ * @author Andrii
+ * @brief Implementation of SPI Peripheral Driver.
+ * Supports both Blocking and Non-Blocking APIs
+ * for data transmission and reception, including error handling.
+ * @version 1.0
+ * @date 2026-12-12
  */
+
 #include "stm32f411xx_spi_driver.h"
 
 /*

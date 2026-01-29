@@ -1,3 +1,21 @@
+/**
+ * @file mfrc522.h
+ * @author Andrii
+ * @brief Driver interface for MFRC522 RFID module (13.56 MHz).
+ *
+ * This file contains register definitions, command codes, and
+ * function prototypes for communicating with the MFRC522 chip
+ * via the custom SPI driver.
+ *
+ * @version 1.0
+ * @date 2026-01-28
+ */
+
+/**
+ * @defgroup MFRC522_Driver MFRC522 Device Driver
+ * @brief High-level driver for external RFID module.
+ * @{
+ */
 #ifndef RFID_RC522_SPI_INC_MFRC522_C_
 #define RFID_RC522_SPI_INC_MFRC522_C_
 
@@ -15,13 +33,15 @@ extern volatile uint8_t SPITransfrComplete;
 #define MFRC522_READ_BIT    (1 << 7)
 #define MFRC522_ADDR_MASK   (0x3F)   // 0011 1111 mask for safety
 
-/*
- *structure with key elements for SPI
+/**
+ * @brief  Configuration structure for the MFRC522 RFID module.
+ * @note   This structure links the low-level SPI driver and GPIOs
+ * to the high-level RFID logic.
  */
 typedef struct {
-    SPI_Handle_t *pSPI;
-    GPIO_RegDef_t *pRstPort;
-    uint8_t RstPin;
+	SPI_Handle_t  *pSPI;      		 /*!< Pointer to the initialized SPI driver handle used for communication */
+	GPIO_RegDef_t *pRstPort; 		 /*!< GPIO Port base address for the Reset pin */
+	uint8_t        RstPin;    		 /*!< Pin number for the Reset signal */
 } MFRC522_Config_t;
 
 /*
@@ -133,3 +153,4 @@ uint8_t GetData_RxBuff(uint8_t *destination, uint8_t length);
 #define MFRC522_CMD_SOFT_RESET      0x0F    /* Resets the MFRC522 */
 
 #endif /* RFID_RC522_SPI_INC_MFRC522_C_ */
+/** @} */

@@ -1,9 +1,13 @@
-/*
- * stm32f411xx_gpio.c
- *
- *  Created on: Oct 23, 2025
- *      Author: Andy
+/**
+ * @file stm32f411xx_gpio_driver.c
+ * @author Andrii
+ * @brief Implementation of GPIO Peripheral Driver.
+ * Provides functions for GPIO initialization, reading/writing to pins/ports,
+ * and handling external interrupts (EXTI).
+ * @version 1.0
+ * @date 2026-10-23
  */
+
 #include "stm32f411xx_gpio_driver.h"
 
 /******************************************************************************

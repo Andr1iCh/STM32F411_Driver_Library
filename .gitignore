@@ -1,11 +1,20 @@
-# STM32CubeIDE / Eclipse build output
+# STM32CubeIDE build output
 Debug/
 Release/
-build/
-*.bin
+Test_GPIO_Hardware/
+Test_SPI_Arduino_Link/
+Test_SPI_LogicAnalyzer/
+MFRC522_Read_Write_Demo/
 *.elf
+*.bin
 *.hex
 *.map
+*.o
+*.d
+*.su
+*.css
+*.list
+*.launch
 
 # Local IDE settings
 .settings/
@@ -14,6 +23,8 @@ build/
 # OS junk
 .DS_Store
 Thumbs.db
+doxygen-awesome.css
 
-# Твоя папка з тестами (відносний шлях)
+# Miscellaneous
 Projects/RFID-RC522_SPI/Tests/
+Docs/
