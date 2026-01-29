@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['slave_20management_0',['SPI Software Slave Management',['../group___s_p_i___s_s_m.html',1,'']]],
+  ['software_20slave_20management_1',['SPI Software Slave Management',['../group___s_p_i___s_s_m.html',1,'']]],
+  ['specifics_2',['Cortex-M4 Processor Specifics',['../group___cortex___m4___specifics.html',1,'']]],
+  ['speed_20prescalers_3',['SPI Clock Speed Prescalers',['../group___s_p_i___sclk_speed.html',1,'']]],
+  ['speeds_4',['GPIO Pin Output Speeds',['../group___g_p_i_o___p_i_n___s_p_e_e_d.html',1,'']]],
+  ['spi_20apis_5',['SPI APIs',['../group___s_p_i___a_p_is.html',1,'']]],
+  ['spi_20application_20events_6',['SPI Application Events',['../group___s_p_i___events.html',1,'']]],
+  ['spi_20application_20states_7',['SPI Application States',['../group___s_p_i___app___states.html',1,'']]],
+  ['spi_20bit_20definitions_8',['SPI Bit Definitions',['../group___s_p_i___bit___definitions.html',1,'']]],
+  ['spi_20bus_20configurations_9',['SPI Bus Configurations',['../group___s_p_i___bus_config.html',1,'']]],
+  ['spi_20clock_20phase_10',['SPI Clock Phase',['../group___s_p_i___c_p_h_a.html',1,'']]],
+  ['spi_20clock_20polarity_11',['SPI Clock Polarity',['../group___s_p_i___c_p_o_l.html',1,'']]],
+  ['spi_20clock_20speed_20prescalers_12',['SPI Clock Speed Prescalers',['../group___s_p_i___sclk_speed.html',1,'']]],
+  ['spi_20data_20frame_20formats_13',['SPI Data Frame Formats',['../group___s_p_i___d_f_f.html',1,'']]],
+  ['spi_20device_20modes_14',['SPI Device Modes',['../group___s_p_i___device_mode.html',1,'']]],
+  ['spi_20driver_15',['SPI Driver',['../group___s_p_i___driver.html',1,'']]],
+  ['spi_20software_20slave_20management_16',['SPI Software Slave Management',['../group___s_p_i___s_s_m.html',1,'']]],
+  ['spi_20status_20flags_17',['SPI Status Flags',['../group___s_p_i___flags.html',1,'']]],
+  ['states_18',['SPI Application States',['../group___s_p_i___app___states.html',1,'']]],
+  ['status_20flags_19',['SPI Status Flags',['../group___s_p_i___flags.html',1,'']]],
+  ['stm32f411xx_20drivers_20',['STM32F411xx Drivers',['../group___s_t_m32_f411xx___drivers.html',1,'']]],
+  ['structures_21',['Peripheral Register Structures',['../group___peripheral___registers.html',1,'']]]
+];

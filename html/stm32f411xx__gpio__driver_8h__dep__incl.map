@@ -1,0 +1,20 @@
+<map id="Drivers/Inc/stm32f411xx_gpio_driver.h" name="Drivers/Inc/stm32f411xx_gpio_driver.h">
+<area shape="rect" id="Node000001" title="Header file for GPIO Peripheral Driver. Defines configuration structures, macros for pin modes,..." alt="" coords="189,5,352,48"/>
+<area shape="rect" id="Node000002" href="$stm32f411xx_8h.html" title="MCU specific header file for STM32F411xx. Contains peripheral base addresses, register definition str..." alt="" coords="183,104,358,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,61,266,104,261,103,260,66"/>
+<area shape="rect" id="Node000008" href="$stm32f411xx__gpio__driver_8c.html" title="Implementation of GPIO Peripheral Driver. Provides functions for GPIO initialization,..." alt="" coords="381,96,546,139"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="330,52,421,95,416,96,330,58"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="276,88,277,51,279,46,281,90"/>
+<area shape="rect" id="Node000003" href="$mfrc522_8h.html" title="Driver interface for MFRC522 RFID module (13.56 MHz)." alt="" coords="5,187,165,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,140,130,188,127,184,232,136"/>
+<area shape="rect" id="Node000005" href="$stm32f411xx__spi__driver_8h.html" title="Header file for SPI Peripheral Driver. Defines configuration structures for SPI communication (Master..." alt="" coords="189,187,352,229"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="263,144,265,187,260,185,260,148"/>
+<area shape="rect" id="Node000007" href="$stm32f411xx__usart__driver_8h.html" title="Header file for USART Peripheral Driver. Contains configuration structures and API prototypes for UAR..." alt="" coords="377,187,540,229"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="304,135,409,186,404,187,304,141"/>
+<area shape="rect" id="Node000004" href="$mfrc522_8c.html" title="Implementation of MFRC522 RFID module driver." alt="" coords="5,277,165,320"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,243,88,278,82,276,83,247"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="277,170,275,134,278,129,282,172"/>
+<area shape="rect" id="Node000006" href="$stm32f411xx__spi__driver_8c.html" title="Implementation of SPI Peripheral Driver. Supports both Blocking and Non&#45;Blocking APIs for data transm..." alt="" coords="189,277,354,320"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="273,243,274,279,269,276,269,247"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="406,180,303,134,304,129,411,179"/>
+</map>

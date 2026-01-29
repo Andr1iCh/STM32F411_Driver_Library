@@ -1,0 +1,46 @@
+var group___s_p_i___driver =
+[
+    [ "SPI Application States", "group___s_p_i___app___states.html", null ],
+    [ "SPI Application Events", "group___s_p_i___events.html", null ],
+    [ "SPI Device Modes", "group___s_p_i___device_mode.html", null ],
+    [ "SPI Bus Configurations", "group___s_p_i___bus_config.html", null ],
+    [ "SPI Clock Speed Prescalers", "group___s_p_i___sclk_speed.html", null ],
+    [ "SPI Data Frame Formats", "group___s_p_i___d_f_f.html", null ],
+    [ "SPI Clock Polarity", "group___s_p_i___c_p_o_l.html", null ],
+    [ "SPI Clock Phase", "group___s_p_i___c_p_h_a.html", null ],
+    [ "SPI Software Slave Management", "group___s_p_i___s_s_m.html", "group___s_p_i___s_s_m" ],
+    [ "SPI_Config_t", "struct_s_p_i___config__t.html", [
+      [ "SPI_BusConfig", "group___s_p_i___driver.html#ga465e652ec79285325ebd15868372e576", null ],
+      [ "SPI_CPHA", "group___s_p_i___driver.html#ga3b804050623608cda41cdbb2af4d9fa9", null ],
+      [ "SPI_CPOL", "group___s_p_i___driver.html#ga40fc355c250c1eca37e3fa18a5428ae7", null ],
+      [ "SPI_DeviceMode", "group___s_p_i___driver.html#ga18cd78cf09f935d713782428b93426a5", null ],
+      [ "SPI_DFF", "group___s_p_i___driver.html#gaa70e4773630f3b7311def8141cedc239", null ],
+      [ "SPI_SclkSpeed", "group___s_p_i___driver.html#ga1148c614b0747516c4e57d622031da97", null ],
+      [ "SPI_SSM", "group___s_p_i___driver.html#ga705887157373f103cb29f858ca0d836e", null ]
+    ] ],
+    [ "SPI_Handle_t", "struct_s_p_i___handle__t.html", [
+      [ "pRxBuffer", "group___s_p_i___driver.html#gacf2a8d77252121207be8a623147bba59", null ],
+      [ "pSPIx", "group___s_p_i___driver.html#gaa7db732f0f2920639f3803a2fb5e51bf", null ],
+      [ "pTxBuffer", "group___s_p_i___driver.html#ga51924cca4cfd49a7bf6ca242a7d200fa", null ],
+      [ "RxLen", "group___s_p_i___driver.html#gac1f0408b5f711df4d7a80366c35e3277", null ],
+      [ "RxState", "group___s_p_i___driver.html#gadda0a0ac63697fc582b375c2c583b928", null ],
+      [ "SPIConfig", "group___s_p_i___driver.html#ga20e01f6e24cb9e9c0c39ab581c4899c4", null ],
+      [ "TxLen", "group___s_p_i___driver.html#ga0d668964103ff1b3bf3a2b624762bd23", null ],
+      [ "TxState", "group___s_p_i___driver.html#ga0c0adfbf2c27e09c752c6a166ad207fb", null ]
+    ] ],
+    [ "SPI_Handle_t::pRxBuffer", "group___s_p_i___driver.html#gacf2a8d77252121207be8a623147bba59", null ],
+    [ "SPI_Handle_t::pSPIx", "group___s_p_i___driver.html#gaa7db732f0f2920639f3803a2fb5e51bf", null ],
+    [ "SPI_Handle_t::pTxBuffer", "group___s_p_i___driver.html#ga51924cca4cfd49a7bf6ca242a7d200fa", null ],
+    [ "SPI_Handle_t::RxLen", "group___s_p_i___driver.html#gac1f0408b5f711df4d7a80366c35e3277", null ],
+    [ "SPI_Handle_t::RxState", "group___s_p_i___driver.html#gadda0a0ac63697fc582b375c2c583b928", null ],
+    [ "SPI_Config_t::SPI_BusConfig", "group___s_p_i___driver.html#ga465e652ec79285325ebd15868372e576", null ],
+    [ "SPI_Config_t::SPI_CPHA", "group___s_p_i___driver.html#ga3b804050623608cda41cdbb2af4d9fa9", null ],
+    [ "SPI_Config_t::SPI_CPOL", "group___s_p_i___driver.html#ga40fc355c250c1eca37e3fa18a5428ae7", null ],
+    [ "SPI_Config_t::SPI_DeviceMode", "group___s_p_i___driver.html#ga18cd78cf09f935d713782428b93426a5", null ],
+    [ "SPI_Config_t::SPI_DFF", "group___s_p_i___driver.html#gaa70e4773630f3b7311def8141cedc239", null ],
+    [ "SPI_Config_t::SPI_SclkSpeed", "group___s_p_i___driver.html#ga1148c614b0747516c4e57d622031da97", null ],
+    [ "SPI_Config_t::SPI_SSM", "group___s_p_i___driver.html#ga705887157373f103cb29f858ca0d836e", null ],
+    [ "SPI_Handle_t::SPIConfig", "group___s_p_i___driver.html#ga20e01f6e24cb9e9c0c39ab581c4899c4", null ],
+    [ "SPI_Handle_t::TxLen", "group___s_p_i___driver.html#ga0d668964103ff1b3bf3a2b624762bd23", null ],
+    [ "SPI_Handle_t::TxState", "group___s_p_i___driver.html#ga0c0adfbf2c27e09c752c6a166ad207fb", null ]
+];

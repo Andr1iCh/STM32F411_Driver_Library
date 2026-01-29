@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['spi_5fbusconfig_0',['SPI_BusConfig',['../group___s_p_i___driver.html#ga465e652ec79285325ebd15868372e576',1,'SPI_Config_t']]],
+  ['spi_5fcpha_1',['SPI_CPHA',['../group___s_p_i___driver.html#ga3b804050623608cda41cdbb2af4d9fa9',1,'SPI_Config_t']]],
+  ['spi_5fcpol_2',['SPI_CPOL',['../group___s_p_i___driver.html#ga40fc355c250c1eca37e3fa18a5428ae7',1,'SPI_Config_t']]],
+  ['spi_5fcr1_3',['SPI_CR1',['../struct_s_p_i___reg_def__t.html#a6f51c82c81a3bdabece05fe92cdc5879',1,'SPI_RegDef_t']]],
+  ['spi_5fcr2_4',['SPI_CR2',['../struct_s_p_i___reg_def__t.html#a7fb6abac9717186ecbc55d2d81595875',1,'SPI_RegDef_t']]],
+  ['spi_5fcrcpr_5',['SPI_CRCPR',['../struct_s_p_i___reg_def__t.html#a13f431f01a461b30701d84fa3e8b4dee',1,'SPI_RegDef_t']]],
+  ['spi_5fdevicemode_6',['SPI_DeviceMode',['../group___s_p_i___driver.html#ga18cd78cf09f935d713782428b93426a5',1,'SPI_Config_t']]],
+  ['spi_5fdff_7',['SPI_DFF',['../group___s_p_i___driver.html#gaa70e4773630f3b7311def8141cedc239',1,'SPI_Config_t']]],
+  ['spi_5fdr_8',['SPI_DR',['../struct_s_p_i___reg_def__t.html#a8b93e2db1b104ccbe56947a2e4e84808',1,'SPI_RegDef_t']]],
+  ['spi_5fi2scfgr_9',['SPI_I2SCFGR',['../struct_s_p_i___reg_def__t.html#a856c8ff0f01f8e864c3d30f85c172e77',1,'SPI_RegDef_t']]],
+  ['spi_5fi2spr_10',['SPI_I2SPR',['../struct_s_p_i___reg_def__t.html#aa16010400764a242e1e0dca7a3b95ebb',1,'SPI_RegDef_t']]],
+  ['spi_5frxcrcr_11',['SPI_RXCRCR',['../struct_s_p_i___reg_def__t.html#a13f3bcf3e2a413b8a51d00cd5f464097',1,'SPI_RegDef_t']]],
+  ['spi_5fsclkspeed_12',['SPI_SclkSpeed',['../group___s_p_i___driver.html#ga1148c614b0747516c4e57d622031da97',1,'SPI_Config_t']]],
+  ['spi_5fsr_13',['SPI_SR',['../struct_s_p_i___reg_def__t.html#ad8bf20e078b37021a19a178010e1fced',1,'SPI_RegDef_t']]],
+  ['spi_5fssm_14',['SPI_SSM',['../group___s_p_i___driver.html#ga705887157373f103cb29f858ca0d836e',1,'SPI_Config_t']]],
+  ['spi_5ftxcrcr_15',['SPI_TXCRCR',['../struct_s_p_i___reg_def__t.html#ad3dcc11b4b1cd6ab36ca8e95f217c0c5',1,'SPI_RegDef_t']]],
+  ['spiconfig_16',['SPIConfig',['../group___s_p_i___driver.html#ga20e01f6e24cb9e9c0c39ab581c4899c4',1,'SPI_Handle_t']]],
+  ['sscgr_17',['SSCGR',['../struct_r_c_c___reg_def__t.html#a33e6a70b1a085ab88975a76642e5dd56',1,'RCC_RegDef_t']]],
+  ['swier_18',['SWIER',['../struct_e_x_t_i___reg_def__t.html#a42b9635e3f1cf6bd5bf40ee96b1fa1be',1,'EXTI_RegDef_t']]]
+];

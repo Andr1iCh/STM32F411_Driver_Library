@@ -1,0 +1,18 @@
+<map id="Components/MFRC522/mfrc522.h" name="Components/MFRC522/mfrc522.h">
+<area shape="rect" id="Node000001" title="Driver interface for MFRC522 RFID module (13.56 MHz)." alt="" coords="293,5,452,48"/>
+<area shape="rect" id="Node000002" href="$stm32f411xx_8h.html" title="MCU specific header file for STM32F411xx. Contains peripheral base addresses, register definition str..." alt="" coords="320,96,426,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,47,375,82,371,79,371,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,171,74,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,124,89,173,88,168,319,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="98,171,162,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="333,124,178,171,176,166,328,123"/>
+<area shape="rect" id="Node000005" href="$stm32f411xx__gpio__driver_8h.html" title="Header file for GPIO Peripheral Driver. Defines configuration structures, macros for pin modes,..." alt="" coords="186,171,362,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="351,122,297,163,295,158,346,124"/>
+<area shape="rect" id="Node000006" href="$stm32f411xx__spi__driver_8h.html" title="Header file for SPI Peripheral Driver. Defines configuration structures for SPI communication (Master..." alt="" coords="387,171,556,197"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="384,121,437,162,432,161,382,126"/>
+<area shape="rect" id="Node000007" href="$stm32f411xx__usart__driver_8h.html" title="Header file for USART Peripheral Driver. Contains configuration structures and API prototypes for UAR..." alt="" coords="581,171,762,197"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="418,121,600,166,595,167,417,126"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="297,168,348,133,354,132,300,172"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="459,170,409,134,410,129,464,171"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="624,170,441,128,442,123,629,170"/>
+</map>

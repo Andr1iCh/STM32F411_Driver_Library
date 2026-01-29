@@ -1,0 +1,5 @@
+<map id="Components/MFRC522/mfrc522.h" name="Components/MFRC522/mfrc522.h">
+<area shape="rect" id="Node000001" title="Driver interface for MFRC522 RFID module (13.56 MHz)." alt="" coords="5,5,165,48"/>
+<area shape="rect" id="Node000002" href="$mfrc522_8c.html" title="Implementation of MFRC522 RFID module driver." alt="" coords="5,96,165,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,62,88,97,82,95,83,66"/>
+</map>

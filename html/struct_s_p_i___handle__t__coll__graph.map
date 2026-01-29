@@ -1,0 +1,7 @@
+<map id="SPI_Handle_t" name="SPI_Handle_t">
+<area shape="rect" id="Node000001" title="Handle structure for SPI peripheral." alt="" coords="86,317,178,493"/>
+<area shape="rect" id="Node000002" href="$struct_s_p_i___reg_def__t.html" title="Peripheral register definition structure for SPI." alt="" coords="5,5,117,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,242,108,301,103,301,91,248"/>
+<area shape="rect" id="Node000003" href="$struct_s_p_i___config__t.html" title="Configuration structure for SPIx peripheral." alt="" coords="141,27,267,224"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,221,161,302,156,300,177,226"/>
+</map>

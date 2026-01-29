@@ -1,0 +1,11 @@
+<map id="MFRC522_Config_t" name="MFRC522_Config_t">
+<area shape="rect" id="Node000001" title="Configuration structure for the MFRC522 RFID module." alt="" coords="130,651,257,720"/>
+<area shape="rect" id="Node000002" href="$struct_s_p_i___handle__t.html" title="Handle structure for SPI peripheral." alt="" coords="86,360,178,536"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,533,183,635,178,634,153,537"/>
+<area shape="rect" id="Node000003" href="$struct_s_p_i___reg_def__t.html" title="Peripheral register definition structure for SPI." alt="" coords="5,5,117,245"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,242,112,344,107,344,87,248"/>
+<area shape="rect" id="Node000004" href="$struct_s_p_i___config__t.html" title="Configuration structure for SPIx peripheral." alt="" coords="141,27,267,224"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="183,221,158,344,153,343,181,227"/>
+<area shape="rect" id="Node000005" href="$struct_g_p_i_o___reg_def__t.html" title="Peripheral register definition structure for GPIO." alt="" coords="201,317,308,579"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="241,577,228,628,224,637,220,634,223,626,237,580"/>
+</map>

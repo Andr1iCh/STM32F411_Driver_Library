@@ -1,0 +1,7 @@
+<map id="GPIO_Handle_t" name="GPIO_Handle_t">
+<area shape="rect" id="Node000001" title="Handle structure for a GPIO pin." alt="" coords="85,339,187,408"/>
+<area shape="rect" id="Node000002" href="$struct_g_p_i_o___reg_def__t.html" title="Peripheral register definition structure for GPIO." alt="" coords="5,5,112,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,264,122,322,117,322,100,269"/>
+<area shape="rect" id="Node000003" href="$struct_g_p_i_o___pin_config__t.html" title="Configuration structure for a GPIO pin." alt="" coords="136,48,293,224"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,222,202,271,186,316,180,327,177,323,182,314,197,269,207,226"/>
+</map>

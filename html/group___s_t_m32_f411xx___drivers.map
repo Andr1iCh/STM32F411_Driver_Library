@@ -1,0 +1,20 @@
+<map id="STM32F411xx Drivers" name="STM32F411xx Drivers">
+<area shape="rect" id="Node000005" href="$group___a_h_b1___peripherals.html" title="Base addresses for peripherals on AHB1 bus." alt="" coords="226,5,351,32"/>
+<area shape="rect" id="Node000006" href="$group___a_p_b1___peripherals.html" title="Base addresses for peripherals on APB1 bus." alt="" coords="226,56,350,83"/>
+<area shape="rect" id="Node000007" href="$group___a_p_b2___peripherals.html" title="Base addresses for peripherals on APB2 bus." alt="" coords="226,107,350,133"/>
+<area shape="rect" id="Node000004" href="$group___bus___base___addresses.html" title="Base addresses for AHB and APB peripheral buses." alt="" coords="217,157,360,184"/>
+<area shape="rect" id="Node000011" href="$group___clock___disable___macros.html" title=" " alt="" coords="206,208,371,251"/>
+<area shape="rect" id="Node000010" href="$group___clock___enable___macros.html" title=" " alt="" coords="208,275,369,317"/>
+<area shape="rect" id="Node000002" href="$group___cortex___m4___specifics.html" title="NVIC ISER, ICER, and Priority Register definitions." alt="" coords="216,341,361,384"/>
+<area shape="rect" id="Node000016" href="$group___g_p_i_o___driver.html" title="GPIO Peripheral Driver." alt="" coords="242,408,335,435"/>
+<area shape="rect" id="Node000014" href="$group___generic___macros.html" title=" " alt="" coords="211,459,366,485"/>
+<area shape="rect" id="Node000013" href="$group___i_r_q___numbers.html" title="IRQ definitions for STM32F411xx." alt="" coords="225,509,352,552"/>
+<area shape="rect" id="Node000003" href="$group___memory___base___addresses.html" title="Base addresses for Flash, SRAM, and System Memory." alt="" coords="205,576,372,603"/>
+<area shape="rect" id="Node000009" href="$group___peripheral___defs.html" title="Peripheral base addresses typecasted to RegDef structures." alt="" coords="216,627,361,653"/>
+<area shape="rect" id="Node000008" href="$group___peripheral___registers.html" title="Structures defining the memory map of peripherals." alt="" coords="222,677,354,720"/>
+<area shape="rect" id="Node000012" href="$group___reset___macros.html" title=" " alt="" coords="206,744,371,771"/>
+<area shape="rect" id="Node000015" href="$group___s_p_i___bit___definitions.html" title="Bit definitions for SPI peripherals." alt="" coords="224,795,353,821"/>
+<area shape="rect" id="Node000017" href="$group___s_p_i___driver.html" title="SPI Peripheral Driver Configuration and APIs." alt="" coords="247,845,330,872"/>
+<area shape="rect" id="Node000001" title="Main driver layer for peripherals." alt="" coords="5,459,157,485"/>
+<area shape="rect" id="Node000018" href="$group___u_s_a_r_t___driver.html" title="USART Peripheral Driver." alt="" coords="236,896,341,923"/>
+</map>
